@@ -4,8 +4,8 @@
     "titleTemplate": "%s",
     "description": "Blog posts and quizes. Made with ❤ by CountrySite",
     "siteUrl": "https://countrysite.netlify.app/",
-    "image": "/assets/globe.jpg",
-    "iconimage": "/assets/globe.jpg",
+    "image": "/assets/globe_icon.jpg",
+    "iconimage": "/assets/globe_icon.jpg",
     "twitterUsername": "@stackrole"
   },
   "ga": "UA-XXXXXXXXX-X"
