@@ -3,7 +3,7 @@ template: index-page
 slug: /
 title: CountrySite
 tagline: Website
-featuredImage: /assets/glob.jpg
+featuredImage: /assets/globe.jpg
 cta:
   ctaText: Know more
   ctaLink: /about
