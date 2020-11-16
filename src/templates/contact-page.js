@@ -42,7 +42,7 @@ const Contact = ({data}) => {
             <label>Name<input type="text" name="name" required /></label>   
           </p>
           <p>
-            <label>Email<input type="email" name="email" required /></label>
+            <label>Your Email<input type="email" name="email" required /></label>
           </p>
           <p>
             <label>Subject<input type="text" name="subject" required /></label>   
