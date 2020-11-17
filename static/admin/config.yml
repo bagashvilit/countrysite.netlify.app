@@ -85,6 +85,14 @@ collections:
         - {label: "Slug", name: "slug", widget: "hidden", default: "/contact" }
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Quiz"
+        name: "quiz"
+        file: "src/content/pages/quiz.md"
+        fields:
+        - {label: "Template", name: "template", widget: "hidden", default: "contact-page" }
+        - {label: "Slug", name: "slug", widget: "hidden", default: "/contact" }
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Body", name: "body", widget: "markdown"}
   - name: settings
     label: Settings
     files:
