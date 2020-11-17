@@ -35,7 +35,7 @@ const Quiz = ({data}) => {
       <div className="wrapper">
         <h1>{frontmatter.title}</h1>
         <div className="description" dangerouslySetInnerHTML={{ __html: html }} />
-        <script type="text/javascript" language = "javascript" src="index.js"></script>
+
 
       </div>
 
