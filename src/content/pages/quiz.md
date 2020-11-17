@@ -1,6 +1,6 @@
 ---
 template: quiz
-slug: /contact
+slug: /quiz
 title: quiz
 ---
 Here is the quiz!
