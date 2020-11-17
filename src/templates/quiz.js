@@ -5,23 +5,6 @@ import {RiSendPlane2Line} from "react-icons/ri";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-export const pageQuery = graphql`
-  query ContactQuery($id: String!){
-		markdownRemark(id: { eq: $id }) {
-      id
-			html
-			excerpt(pruneLength: 140)
-      frontmatter {
-        title
-      }
-    }
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
 
 const Quiz = ({data}) => {
   const { markdownRemark, site } = data // data.markdownRemark holds your post data
