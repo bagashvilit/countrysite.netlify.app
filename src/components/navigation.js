@@ -19,6 +19,10 @@ const MenuItems = [
     path: "/contact",
     title: "Contact"
   },
+  {
+    path: "/quiz",
+    title: "Quiz"
+  },
 ]
 
 const ListLink = (props) => (<li><Link to={props.to}>{props.children}</Link></li>)

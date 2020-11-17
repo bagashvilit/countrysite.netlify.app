@@ -89,7 +89,7 @@ collections:
         name: "quiz"
         file: "src/content/pages/quiz.md"
         fields:
-        - {label: "Template", name: "template", widget: "hidden", default: "contact-page" }
+        - {label: "Template", name: "template", widget: "hidden", default: "quiz" }
         - {label: "Slug", name: "slug", widget: "hidden", default: "/contact" }
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Body", name: "body", widget: "markdown"}

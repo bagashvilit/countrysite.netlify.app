@@ -5,7 +5,7 @@ import {RiSendPlane2Line} from "react-icons/ri";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-export const quizQuery = graphql`
+export const pageQuery = graphql`
   query quizQuery($id: String!){
 		markdownRemark(id: { eq: $id }) {
       id
