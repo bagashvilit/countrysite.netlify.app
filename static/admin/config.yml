@@ -86,11 +86,11 @@ collections:
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Body", name: "body", widget: "markdown"}
       - label: "Contest"
-        name: "contest"
+        name: "Contest"
         file: "src/content/pages/contest.md"
         fields:
-        - {label: "Template", name: "template", widget: "hidden", default: "quiz" }
-        - {label: "Slug", name: "slug", widget: "hidden", default: "/contact" }
+        - {label: "Template", name: "template", widget: "hidden", default: "/contest-submission" }
+        - {label: "Slug", name: "slug", widget: "hidden", default: "/contest" }
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Body", name: "body", widget: "markdown"}
   - name: settings

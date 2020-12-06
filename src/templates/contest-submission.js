@@ -48,16 +48,16 @@ const contest = ({data}) => {
             <label>Pick the country from the list<input type="text" name="subject" required /></label>   
           </p>
           <p>
-            <label>Capital<textarea name="message" required /></label>
+            <label>Capital City<input type="email" name="email" required /></label>
           </p>
           <p>
-            <label>Population<textarea name="message" required /></label>
+            <label>Population<input type="email" name="email" required /></label>
           </p>
           <p>
-            <label>National language<textarea name="message" required /></label>
+            <label>National Language<input type="email" name="email" required /></label>
           </p>
           <p>
-            <label>Currency<textarea name="message" required /></label>
+          <label>Currency<input type="email" name="email" required /></label>
           </p>
           <p>
             <label>Culture and interesting facts<textarea name="message" required ></textarea></label>
