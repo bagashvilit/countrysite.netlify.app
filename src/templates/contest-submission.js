@@ -36,7 +36,7 @@ const contest = ({data}) => {
       <div className="wrapper">
         <h1>{frontmatter.title}</h1>
         <div className="description" dangerouslySetInnerHTML={{ __html: html }} />
-        <form className="contact-form" action="/thanks" name="contest" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form className="contact-form" action="/thanks" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact" />
           <p>
             <label>Name<input type="text" name="name" required /></label>   
@@ -46,13 +46,13 @@ const contest = ({data}) => {
           </p>
           <p>
             <label>Pick the country</label>
-            <input type="checkbox" name="England" id="England" value="England"></input>
+            <input type="radio" name="England" id="England" value="England"></input>
             <label for="England">England</label><br></br>
-            <input type="checkbox" name="Mongolia" id="Mongolia" value="Mongolia"></input>
+            <input type="radio" name="Mongolia" id="Mongolia" value="Mongolia"></input>
             <label for="Mongolia">Mongolia</label><br></br>
-            <input type="checkbox" name="India" id="India" value="India"></input>
+            <input type="radio" name="India" id="India" value="India"></input>
             <label for="India">India</label><br></br>
-            <input type="checkbox" name="Canada" id="Canada" value="Canada"></input>
+            <input type="radio" name="Canada" id="Canada" value="Canada"></input>
             <label for="Canada">Canada</label><br></br>
           </p>
           <p>
