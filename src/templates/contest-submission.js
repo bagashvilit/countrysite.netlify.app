@@ -39,45 +39,25 @@ const contest = ({data}) => {
         <div className="description" dangerouslySetInnerHTML={{ __html: html }} />
         <form className="contact-form" action="/thanks" name="contest" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>Name<input type="text" name="name" required /></label>   
-          </p>
-          <p>
-            <label>Email<input type="email" name="email" required /></label>
-          </p>
-          <p>
-            <label>Pick the country</label>
-            <input type="text" name="text" list="countries" />
-            <datalist id="countries">
-              <option value="England"></option>
-              <option value="Mongolia"></option>    
-              <option value="Italy"></option>
-              <option value="Singapore"></option>
-              <option value="Finland"></option>
-            </datalist>           
-          </p>
-          <p>
-            <label>Capital City<input type="text" name="city" required /></label>
+          <div class="select-size">
+            <input type="radio" name="s-size" id="small" checked/>
+            <input type="radio" name="s-size" id="medium" />
+            <input type="radio" name="s-size" id="large" />
+            <input type="radio" name="s-size" id="x-large" />
+            <input type="radio" name="s-size" id="xx-large" />
 
-          </p>
-          <p>
-            <label>Population<input type="text" name="population" required /></label>
-          </p>
-          <p>
-            <label>National Language<input type="text" name="National Language" required /></label>
-          </p>
-          <p>
-          <label>Currency<input type="text" name="Currency" required /></label>
-          </p>
-          <p>
-            <label>Culture and interesting facts<textarea name="Information" required ></textarea></label>
-          </p>
-          <p className="text-align-right">
-            <button className="button" type="submit">Submit response <span className="icon -right"><RiSendPlane2Line/></span></button>
-          </p>
+            <label for="small">S</label>
+            <label for="medium">M</label>
+            <label for="large">L</label>
+            <label for="x-large">XL</label>
+            <label for="xx-large">XXL</label>
+
+          </div>
+          <script type="text/javascript" language = "javascript" src="contest.js"></script>
         </form>
       </div>
-     
+
+      
     </Layout>
   )
 }
