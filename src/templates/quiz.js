@@ -23,12 +23,12 @@ export const pageQuery = graphql`
   }
 `
 
-const Quiz = ({data}) => {
+const Contact = ({data}) => {
   const { markdownRemark, site } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
 
   return  (
-    <Layout className="quiz">
+    <Layout className="contact-page">
       <SEO 
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}
@@ -39,14 +39,7 @@ const Quiz = ({data}) => {
         <form className="contact-form" action="/thanks" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact" />
           <p>
-          <label>What is your preferred city?<input type="text" name="name" list="cities" required /></label>
-            <datalist id="cities">
-                <option value="Tbilisi"></option>
-                <option value="Tokyo"></option>    
-                <option value="London"></option>
-                <option value="Singapore"></option>
-                <option value="Berlin"></option>
-            </datalist>
+            <label>Name<input type="text" name="name" required /></label>   
           </p>
           <p>
             <label>Email<input type="email" name="email" required /></label>
@@ -67,4 +60,4 @@ const Quiz = ({data}) => {
   )
 }
 
-export default Quiz
+export default Contact
