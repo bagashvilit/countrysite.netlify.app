@@ -36,7 +36,7 @@ const contest = ({data}) => {
       <div className="wrapper">
         <h1>{frontmatter.title}</h1>
         <div className="description" dangerouslySetInnerHTML={{ __html: html }} />
-        <form className="contact-form" action="/thanks" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form className="contest-sumbission" action="/thanks" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact" />
           <p>
             <label>Name<input type="text" name="name" required /></label>   
@@ -45,7 +45,8 @@ const contest = ({data}) => {
             <label>Email<input type="email" name="email" required /></label>
           </p>
           <p>
-            <label>Pick the country from the list<input type="text" name="subject" required /></label>   
+          <label>Please pick the country?</label>
+            <button className="button" type="radio">England </button>
           </p>
           <p>
             <label>Capital City<input type="email" name="email" required /></label>
