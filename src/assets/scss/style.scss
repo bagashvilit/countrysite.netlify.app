@@ -326,6 +326,17 @@ article img {
 	label {
 		color: var(--label-text);
 	}
+	input {
+		margin-bottom: 0.75rem;
+		padding: 0.5rem 0.75rem;
+		border: 0;
+		border-radius: 5px;
+		border: 2px solid #007991;
+		background-color: transparent;
+		color: #007991;
+		font-size: inherit;
+		transition: background-color 0.3s, color 0.3s;
+	}
 	textarea {
 		width: 100%;
 		max-width: 100%;

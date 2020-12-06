@@ -47,7 +47,7 @@ const contest = ({data}) => {
           </p>
           <p>
             <label>Pick the country</label>
-            <input type="radio" name="text" list="countries" />
+            <input type="text" name="text" list="countries" />
             <datalist id="countries">
               <option value="England"></option>
               <option value="Mongolia"></option>    
@@ -57,7 +57,8 @@ const contest = ({data}) => {
             </datalist>           
           </p>
           <p>
-            <label>Capital City<input type="text" name="city" required /></label>
+            <label>One</label>
+            <input >Nerko One</input>
           </p>
           <p>
             <label>Population<input type="text" name="population" required /></label>
