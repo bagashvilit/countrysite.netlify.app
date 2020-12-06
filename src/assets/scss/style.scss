@@ -341,6 +341,54 @@ article img {
 		min-height: 200px;
 	}
 }
+// Contest page
+.contest-page{
+	.wrapper{
+	align-self: center;
+  margin: 2rem auto;
+  padding: 2rem;
+  padding-bottom: 1rem;
+  max-width: 37rem;
+  background-color: #fefefe;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+	}
+	.description {
+		line-height: 1.5;
+	}
+	.contest-form {
+		margin-top: 36px;
+		label {
+			color: var(--label-text);
+		}
+		input,
+		textarea {
+			width: 100%;
+			max-width: 100%;
+			margin: 8px 0 16px;
+			padding: 16px;
+			border: 6px solid #a4a8973a;
+			border-radius: 12px;
+			appearance: none;
+			font-size: 18px;
+			font-weight: 600;
+			&:focus {
+				border-color: var(--input-focus-border);
+			}
+		}
+		textarea {
+			min-height: 200px;
+		}
+  }
+}
+body {
+  background: linear-gradient(to top, #007991, #78ffd6);
+  background-color: #007991;
+  display: flex;
+  font-size: 1.25rem;
+  height: 100%;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
 .site-footer {
 	display: flex;
 	align-items: center;

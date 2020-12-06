@@ -28,15 +28,16 @@ const contest = ({data}) => {
   const { frontmatter, html } = markdownRemark
 
   return  (
-    <Layout className="contact-page">
+    <Layout className="contest-page">
       <SEO 
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}
       />
+      <body>
       <div className="wrapper">
         <h1>{frontmatter.title}</h1>
         <div className="description" dangerouslySetInnerHTML={{ __html: html }} />
-        <form className="contact-form" action="/thanks" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form className="contest-form" action="/thanks" name="contest" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact" />
           <p>
             <label>Name<input type="text" name="name" required /></label>   
@@ -45,7 +46,7 @@ const contest = ({data}) => {
             <label>Email<input type="email" name="email" required /></label>
           </p>
           <p>
-            <label>What is your preferred city?</label>
+            <label>Pick the country?</label>
             <input type="text" name="text" list="countries" />
             <datalist id="countries">
               <option value="England"></option>
@@ -75,7 +76,7 @@ const contest = ({data}) => {
           </p>
         </form>
       </div>
-
+      </body>
     </Layout>
   )
 }
