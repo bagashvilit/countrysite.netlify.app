@@ -37,7 +37,7 @@ const contest = ({data}) => {
       <div className="wrapper">
         <h1>{frontmatter.title}</h1>
         <div className="description" dangerouslySetInnerHTML={{ __html: html }} />
-
+        <script type="text/javascript" language = "javascript" src="./contest.js"></script>
         <div id="quiz"></div>
         <button id="submit">Get Results</button>
         <div id="results"></div>
