@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 export const pageQuery = graphql`
-  query ContactQuery($id: String!){
+  query QuizQuery($id: String!){
 		markdownRemark(id: { eq: $id }) {
       id
 			html
