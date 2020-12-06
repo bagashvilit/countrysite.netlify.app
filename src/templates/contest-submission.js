@@ -46,20 +46,15 @@ const contest = ({data}) => {
             <label>Email<input type="email" name="email" required /></label>
           </p>
           <p>
-          <div className="select-size">
-              <input type="radio" name="s-size" id="small" checked/>
-              <input type="radio" name="s-size" id="medium" />
-              <input type="radio" name="s-size" id="large" />
-              <input type="radio" name="s-size" id="x-large" />
-              <input type="radio" name="s-size" id="xx-large" />
-
-              <label for="small">S</label>
-              <label for="medium">M</label>
-              <label for="large">L</label>
-              <label for="x-large">XL</label>
-              <label for="xx-large">XXL</label>
-
-            </div>        
+            <label>Pick the country</label>
+            <input type="text" name="text" list="countries" />
+            <datalist id="countries">
+              <option value="England"></option>
+              <option value="Mongolia"></option>    
+              <option value="Italy"></option>
+              <option value="Singapore"></option>
+              <option value="Finland"></option>
+            </datalist>           
           </p>
           <p>
             <label>Capital City<input type="text" name="city" required /></label>
