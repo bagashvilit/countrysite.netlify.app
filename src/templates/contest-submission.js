@@ -54,6 +54,9 @@ const contest = ({data}) => {
 
           </div>
           <script type="text/javascript" language = "javascript" src="contest.js"></script>
+          <p className="text-align-right">
+            <button className="button" type="submit">Submit response <span className="icon -right"><RiSendPlane2Line/></span></button>
+          </p>
         </form>
       </div>
 
