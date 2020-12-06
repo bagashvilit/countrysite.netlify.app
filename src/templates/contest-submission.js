@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 export const pageQuery = graphql`
-  query QuizQuery($id: String!){
+  query ContestQuery($id: String!){
 		markdownRemark(id: { eq: $id }) {
       id
 			html
@@ -23,12 +23,12 @@ export const pageQuery = graphql`
   }
 `
 
-const Contact = ({data}) => {
+const contest = ({data}) => {
   const { markdownRemark, site } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
 
   return  (
-    <Layout className="contact-page">
+    <Layout className="contest-sumbission">
       <SEO 
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}
@@ -45,10 +45,22 @@ const Contact = ({data}) => {
             <label>Email<input type="email" name="email" required /></label>
           </p>
           <p>
-            <label>Subject<input type="text" name="subject" required /></label>   
+            <label>Pick the country from the list<input type="text" name="subject" required /></label>   
           </p>
           <p>
-            <label>Message<textarea name="message" required ></textarea></label>
+            <label>Capital<textarea name="message" required ></textarea></label>
+          </p>
+          <p>
+            <label>Population<textarea name="message" required ></textarea></label>
+          </p>
+          <p>
+            <label>National language<textarea name="message" required ></textarea></label>
+          </p>
+          <p>
+            <label>Currency<textarea name="message" required ></textarea></label>
+          </p>
+          <p>
+            <label>Culture and interesting facts<textarea name="message" required ></textarea></label>
           </p>
           <p className="text-align-right">
             <button className="button" type="submit">Send Message <span className="icon -right"><RiSendPlane2Line/></span></button>
@@ -60,4 +72,4 @@ const Contact = ({data}) => {
   )
 }
 
-export default Contact
+export default contest

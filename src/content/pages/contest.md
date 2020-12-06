@@ -1,5 +1,5 @@
 ---
-template: quiz
+template: contest-submission
 slug: /quiz
 title: Quiz
 ---
