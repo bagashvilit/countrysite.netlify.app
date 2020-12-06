@@ -46,7 +46,7 @@ const contest = ({data}) => {
             <label>Email<input type="email" name="email" required /></label>
           </p>
           <p>
-            <label>Pick the country?</label>
+            <label>Pick the country</label>
             <input type="text" name="text" list="countries" />
             <datalist id="countries">
               <option value="England"></option>

@@ -312,8 +312,6 @@ article img {
 	.wrapper {
 		max-width: 768px;
 		margin: 0 auto;
-		background: linear-gradient(to top, #007991, #78ffd6);
-    background-color: #007991;
 	}
 	.description {
 		line-height: 1.5;
@@ -343,15 +341,10 @@ article img {
 		min-height: 200px;
 	}
 }
-// body {
-//   background: linear-gradient(to top, #007991, #78ffd6);
-//   background-color: #007991;
-//   display: flex;
-//   font-size: 1.25rem;
-//   height: 100%;
-//   width: 100%;
-//   -webkit-font-smoothing: antialiased;
-// }
+body {
+  background: linear-gradient(to top, #007991, #78ffd6);
+  background-color: #007991;
+}
 .site-footer {
 	display: flex;
 	align-items: center;
