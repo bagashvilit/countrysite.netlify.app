@@ -48,22 +48,22 @@ const contest = ({data}) => {
             <label>Pick the country from the list<input type="text" name="subject" required /></label>   
           </p>
           <p>
-            <label>Capital<textarea name="message" required ></textarea></label>
+            <label>Capital<textarea name="message" required /></label>
           </p>
           <p>
-            <label>Population<textarea name="message" required ></textarea></label>
+            <label>Population<textarea name="message" required /></label>
           </p>
           <p>
-            <label>National language<textarea name="message" required ></textarea></label>
+            <label>National language<textarea name="message" required /></label>
           </p>
           <p>
-            <label>Currency<textarea name="message" required ></textarea></label>
+            <label>Currency<textarea name="message" required /></label>
           </p>
           <p>
             <label>Culture and interesting facts<textarea name="message" required ></textarea></label>
           </p>
           <p className="text-align-right">
-            <button className="button" type="submit">Send Message <span className="icon -right"><RiSendPlane2Line/></span></button>
+            <button className="button" type="submit">Submit response <span className="icon -right"><RiSendPlane2Line/></span></button>
           </p>
         </form>
       </div>
