@@ -1,5 +1,5 @@
 ---
-template: contact-page
+template: quiz
 slug: /quiz
 title: Quiz
 ---
