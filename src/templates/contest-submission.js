@@ -47,13 +47,13 @@ const contest = ({data}) => {
           <p>
             <label>Pick the country</label>
             <input type="radio" name="England" id="England" value="England"></input>
-            <label for="England">England</label><br></br>
+            
             <input type="radio" name="Mongolia" id="Mongolia" value="Mongolia"></input>
-            <label for="Mongolia">Mongolia</label><br></br>
+           
             <input type="radio" name="India" id="India" value="India"></input>
-            <label for="India">India</label><br></br>
+            
             <input type="radio" name="Canada" id="Canada" value="Canada"></input>
-            <label for="Canada">Canada</label><br></br>
+            
           </p>
           <p>
             <label>Capital City<input type="email" name="email" required /></label>
