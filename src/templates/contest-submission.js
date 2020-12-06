@@ -45,30 +45,30 @@ const contest = ({data}) => {
             <label>Email<input type="email" name="email" required /></label>
           </p>
           <p>
-            <label>Pick the country</label>
-            <input type="radio" name="England" id="England" value="England"></input>
-            
-            <input type="radio" name="Mongolia" id="Mongolia" value="Mongolia"></input>
-           
-            <input type="radio" name="India" id="India" value="India"></input>
-            
-            <input type="radio" name="Canada" id="Canada" value="Canada"></input>
-            
+            <label>What is your preferred city?</label>
+            <input type="text" name="text" list="countries" />
+            <datalist id="countries">
+              <option value="England"></option>
+              <option value="Mongolia"></option>    
+              <option value="Italy"></option>
+              <option value="Singapore"></option>
+              <option value="Finland"></option>
+            </datalist>           
           </p>
           <p>
-            <label>Capital City<input type="email" name="email" required /></label>
+            <label>Capital City<input type="text" name="city" required /></label>
           </p>
           <p>
-            <label>Population<input type="email" name="email" required /></label>
+            <label>Population<input type="text" name="population" required /></label>
           </p>
           <p>
-            <label>National Language<input type="email" name="email" required /></label>
+            <label>National Language<input type="text" name="National Language" required /></label>
           </p>
           <p>
-          <label>Currency<input type="email" name="email" required /></label>
+          <label>Currency<input type="text" name="Currency" required /></label>
           </p>
           <p>
-            <label>Culture and interesting facts<textarea name="message" required ></textarea></label>
+            <label>Culture and interesting facts<textarea name="Information" required ></textarea></label>
           </p>
           <p className="text-align-right">
             <button className="button" type="submit">Submit response <span className="icon -right"><RiSendPlane2Line/></span></button>
