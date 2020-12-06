@@ -1,6 +1,6 @@
 ---
 template: contest-submission
-slug: /contest
+slug: /quiz
 title: Contest submissions
 ---
 Here is the quiz!
