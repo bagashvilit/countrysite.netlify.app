@@ -2,12 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import {RiSendPlane2Line} from "react-icons/ri";
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-
-import './index.css';
-import App from './App';
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -44,12 +38,9 @@ const contest = ({data}) => {
         <h1>{frontmatter.title}</h1>
         <div className="description" dangerouslySetInnerHTML={{ __html: html }} />
 
-        ReactDOM.render(
-          <React.StrictMode>
-          <App />
-            </React.StrictMode>,
-        document.getElementById('root')
-        );
+        <div id="quiz"></div>
+        <button id="submit">Get Results</button>
+        <div id="results"></div>
       </div>
 
       

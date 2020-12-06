@@ -1,67 +1,105 @@
-import React, { useState } from 'react';
+var myQuestions = [
+	{
+		question: "What is 10/2?",
+		answers: {
+			a: '3',
+			b: '5',
+			c: '115'
+		},
+		correctAnswer: 'b'
+	},
+	{
+		question: "What is 30/3?",
+		answers: {
+			a: '3',
+			b: '5',
+			c: '10'
+		},
+		correctAnswer: 'c'
+	}
+];
 
-export default function App() {
-	const questions = [
-		{
-			questionText: 'What is the capital of France?',
-			answerOptions: [
-				{ answerText: 'New York', isCorrect: false },
-				{ answerText: 'London', isCorrect: false },
-				{ answerText: 'Paris', isCorrect: true },
-				{ answerText: 'Dublin', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'Who is CEO of Tesla?',
-			answerOptions: [
-				{ answerText: 'Jeff Bezos', isCorrect: false },
-				{ answerText: 'Elon Musk', isCorrect: true },
-				{ answerText: 'Bill Gates', isCorrect: false },
-				{ answerText: 'Tony Stark', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'The iPhone was created by which company?',
-			answerOptions: [
-				{ answerText: 'Apple', isCorrect: true },
-				{ answerText: 'Intel', isCorrect: false },
-				{ answerText: 'Amazon', isCorrect: false },
-				{ answerText: 'Microsoft', isCorrect: false },
-			],
-		},
-		{
-			questionText: 'How many Harry Potter books are there?',
-			answerOptions: [
-				{ answerText: '1', isCorrect: false },
-				{ answerText: '4', isCorrect: false },
-				{ answerText: '6', isCorrect: false },
-				{ answerText: '7', isCorrect: true },
-			],
-		},
-	];
+function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
 
-	return (
-		<div className='app'>
-			{/* HINT: replace "false" with logic to display the 
-      score when the user has answered all the questions */}
-			{false ? (
-				<div className='score-section'>You scored 1 out of {questions.length}</div>
-			) : (
-				<>
-					<div className='question-section'>
-						<div className='question-count'>
-							<span>Question 1</span>/{questions.length}
-						</div>
-						<div className='question-text'>This is where the question text should go</div>
-					</div>
-					<div className='answer-section'>
-						<button>Answer 1</button>
-						<button>Answer 2</button>
-						<button>Answer 3</button>
-						<button>Answer 4</button>
-					</div>
-				</>
-			)}
-		</div>
-	);
+	function showQuestions(questions, quizContainer){
+			// we'll need a place to store the output and the answer choices
+	var output = [];
+	var answers;
+
+	// for each question...
+	for(var i=0; i<questions.length; i++){
+		
+		// first reset the list of answers
+		answers = [];
+
+		// for each available answer to this question...
+		for(letter in questions[i].answers){
+
+			// ...add an html radio button
+			answers.push(
+				'<label>'
+					+ '<input type="radio" name="question'+i+'" value="'+letter+'">'
+					+ letter + ': '
+					+ questions[i].answers[letter]
+				+ '</label>'
+			);
+		}
+
+		// add this question and its answers to the output
+		output.push(
+			'<div class="question">' + questions[i].question + '</div>'
+			+ '<div class="answers">' + answers.join('') + '</div>'
+		);
+	}
+
+	// finally combine our output list into one string of html and put it on the page
+	quizContainer.innerHTML = output.join('');
+	}
+
+	function showResults(questions, quizContainer, resultsContainer){
+			// gather answer containers from our quiz
+	var answerContainers = quizContainer.querySelectorAll('.answers');
+	
+	// keep track of user's answers
+	var userAnswer = '';
+	var numCorrect = 0;
+	
+	// for each question...
+	for(var i=0; i<questions.length; i++){
+
+		// find selected answer
+		userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
+		
+		// if answer is correct
+		if(userAnswer===questions[i].correctAnswer){
+			// add to the number of correct answers
+			numCorrect++;
+			
+			// color the answers green
+			answerContainers[i].style.color = 'lightgreen';
+		}
+		// if answer is wrong or blank
+		else{
+			// color the answers red
+			answerContainers[i].style.color = 'red';
+		}
+	}
+
+	// show number of correct answers out of total
+	resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
+	}
+
+	// show the questions
+	showQuestions(questions, quizContainer);
+
+	// when user clicks submit, show results
+	submitButton.onclick = function(){
+		showResults(questions, quizContainer, resultsContainer);
+	}
 }
+
+var quizContainer = document.getElementById('quiz');
+var resultsContainer = document.getElementById('results');
+var submitButton = document.getElementById('submit');
+
+generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
