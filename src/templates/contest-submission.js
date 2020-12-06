@@ -57,8 +57,7 @@ const contest = ({data}) => {
             </datalist>           
           </p>
           <p>
-            <label>One</label>
-            <input >Nerko One</input>
+            <label>Capital City<input type="text" name="city" required /></label>
           </p>
           <p>
             <label>Population<input type="text" name="population" required /></label>
