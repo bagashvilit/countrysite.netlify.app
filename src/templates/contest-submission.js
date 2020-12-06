@@ -58,8 +58,6 @@ const contest = ({data}) => {
           </p>
           <p>
             <label>Capital City<input type="text" name="city" required /></label>
-            <input type="radio" id="North America" name="continent" value="North America"/>
-            <label for="North America">North America</label>
           </p>
           <p>
             <label>Population<input type="text" name="population" required /></label>
