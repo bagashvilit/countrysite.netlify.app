@@ -36,28 +36,8 @@ const contest = ({data}) => {
       
       <div className="wrapper">
         <h1>{frontmatter.title}</h1>
-        <div className="description" dangerouslySetInnerHTML={{ __html: html }} />
-        <form className="contact-form" action="/thanks" name="contest" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="contact" />
-          <div class="select-size">
-            <input type="radio" name="s-size" id="small" checked/>
-            <input type="radio" name="s-size" id="medium" />
-            <input type="radio" name="s-size" id="large" />
-            <input type="radio" name="s-size" id="x-large" />
-            <input type="radio" name="s-size" id="xx-large" />
+      
 
-            <label for="small">S</label>
-            <label for="medium">M</label>
-            <label for="large">L</label>
-            <label for="x-large">XL</label>
-            <label for="xx-large">XXL</label>
-
-          </div>
-          <script type="text/javascript" language = "javascript" src="contest.js"></script>
-          <p className="text-align-right">
-            <button className="button" type="submit">Submit response <span className="icon -right"><RiSendPlane2Line/></span></button>
-          </p>
-        </form>
       </div>
 
       
