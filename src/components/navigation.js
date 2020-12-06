@@ -16,8 +16,8 @@ const MenuItems = [
     title: "Blog"
   },
   {
-    path: "/quiz",
-    title: "Quiz"
+    path: "/contest",
+    title: "Contest"
   },
   {
     path: "/contact",
