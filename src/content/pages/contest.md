@@ -3,4 +3,4 @@ template: contest-submission
 slug: /quiz
 title: Contest submissions
 ---
-Here is the quiz!
+Every month we hold contest. Pick one of the coountries from the list and answer the following questions. The winner of the contest will be announced at theend of the months. Winner's respones will be published as a new blog on CoutrySite.
