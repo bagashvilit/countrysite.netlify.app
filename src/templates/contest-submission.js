@@ -33,7 +33,7 @@ const contest = ({data}) => {
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}
       />
-      <body>
+      
       <div className="wrapper">
         <h1>{frontmatter.title}</h1>
         <div className="description" dangerouslySetInnerHTML={{ __html: html }} />
@@ -76,7 +76,7 @@ const contest = ({data}) => {
           </p>
         </form>
       </div>
-      </body>
+     
     </Layout>
   )
 }
