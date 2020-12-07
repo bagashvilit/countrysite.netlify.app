@@ -331,8 +331,8 @@ article img {
 		position: absolute;
 		top: 0;
 		left: 0;
-		height: 15px;
-		width: 15px;
+		height: 30px;
+		width: 30px;
 		background-color: rgb(179, 177, 177);
 		border-radius: 50%;
 	}
@@ -351,7 +351,7 @@ article img {
 			cursor: pointer;
 			opacity:0; 	// Set opacity to zero to hide the input box behind the element
 		}
-		
+
 		input:checked ~ .checkmark {
 			background-color: #3d295c;
 		}
