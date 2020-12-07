@@ -49,39 +49,38 @@ const contest = ({data}) => {
           </p>
           <p>
             <label> Please select the country </label>
-            <label class="container">Germany
-            <input type="radio" name="radio"></input>
-            <span class="checkmark"></span>
-            </label>
-            <label class="container">Mongolia
-            <input type="radio" name="radio"></input>
-            <span class="checkmark"></span>
-            </label>
-            <label class="container">Thailand
-            <input type="radio" name="radio"></input>
-            <span class="checkmark"></span>
-            </label>
-            <label class="container">Belgium
-            <input type="radio" name="radio"></input>
-            <span class="checkmark"></span>
-            </label> 
+              <input type="checkbox" name="country" id="Germany"/>
+              <label for="Germany" class="container">Germany</label>
+              <span class="checkmark"></span>
+              
+              <input type="checkbox" name="country" id="Mongolia"/>
+              <label for="Mongolia" class="container">Mongolia</label>
+              <span class="checkmark"></span>
+
+              <input type="checkbox" name="country" id="Thailand"/>
+              <label for="Thailand" class="container">Thailand</label>
+              <span class="checkmark"></span>
+
+              <input type="checkbox" name="country" id="Thailand"/>
+              <label for="Thailand" class="container">Thailand</label>
+              <span class="checkmark"></span>
             </p>               
           <p>
           <label> Capital of the selected country </label>
             <label class="container">Ulaanbaatar
-            <input type="radio" name="radio"></input>
+            <input type="radio" name="capital"/>
             <span class="checkmark"></span>
             </label>
             <label class="container">Berlin
-            <input type="radio" name="radio"></input>
+            <input type="radio" name="capital"/>
             <span class="checkmark"></span>
             </label>
             <label class="container">Brussels
-            <input type="radio" name="radio"></input>
+            <input type="radio" name="capital"/>
             <span class="checkmark"></span>
             </label>
             <label class="container">Bangkok
-            <input type="radio" name="radio"></input>
+            <input type="radio" name="capital"/>
             <span class="checkmark"></span>
             </label> 
 
@@ -89,34 +88,34 @@ const contest = ({data}) => {
           <p>
           <label> Population of the selected country </label>
             <label class="container">3.17 million
-            <input type="radio" name="radio"></input>
+            <input type="radio" name="population"/>
             <span class="checkmark"></span>
             </label>
             <label class="container">11.46 million
-            <input type="radio" name="radio"></input>
+            <input type="radio" name="population"/>
             <span class="checkmark"></span>
             </label>
             <label class="container">69.43 million
-            <input type="radio" name="radio"></input>
+            <input type="radio" name="population"/>
             <span class="checkmark"></span>
             </label>
             <label class="container">83.02 million
-            <input type="radio" name="radio"></input>
+            <input type="radio" name="population"/>
             <span class="checkmark"></span>
             </label> 
           </p>
           <p>
           <label> Currency of the selected country </label>
             <label class="container">Euro
-            <input type="radio" name="radio"></input>
+            <input type="radio" name="radio"/>
             <span class="checkmark"></span>
             </label>
-            <label class="container">Mongolia
-            <input type="radio" name="radio"></input>
+            <label class="container">Tugric
+            <input type="radio" name="radio"/>
             <span class="checkmark"></span>
             </label>
-            <label class="container">Singapore
-            <input type="radio" name="radio"></input>
+            <label class="container">Baht
+            <input type="radio" name="radio"/>
             <span class="checkmark"></span>
             </label>
           </p>
