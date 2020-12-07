@@ -239,12 +239,12 @@ article img {
 	max-width: 100%;
 }
 .blog-post-content {
-	max-width: 70ch;
-	margin:0 auto;
-	padding: 20px;
-	line-height: 1.5;
-	font-size: 20px;
-	background-color: #f2f2f2;
+	max-width: 768px;
+	margin: 0 auto;
+	padding: 2rem;
+	padding-bottom: 1rem;
+	background-color: #fefefe;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
 }
 
 .blog-post {
