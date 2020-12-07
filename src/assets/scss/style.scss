@@ -354,7 +354,6 @@ article img {
 		height: 15px;
 		width: 15px;
 		background-color: rgb(179, 177, 177);
-		border-radius: 50%;
 	}
 	
 	/* When the radio button is checked, add a blue background */
@@ -374,15 +373,6 @@ article img {
 		display: block;
 	}
 	
-	/* Style the indicator (dot/circle) */
-	.container .checkmark:after {
-		 top: 9px;
-		left: 9px;
-		width: 8px;
-		height: 8px;
-		border-radius: 50%;
-		background: white;
-	}
 	input,
 	textarea {
 		width: 100%;
