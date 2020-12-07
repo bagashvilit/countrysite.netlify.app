@@ -4,11 +4,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import {RiSendPlane2Line} from "react-icons/ri";
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -40,12 +35,53 @@ const contest = ({data}) => {
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}
       />
-        ReactDOM.render(
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>,
-      document.getElementById('root')
-    );
+      
+      <div className="wrapper">
+        <h1>{frontmatter.title}</h1>
+        <div className="description" dangerouslySetInnerHTML={{ __html: html }} />
+        <form className="contact-form" action="/thanks" name="contest" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
+          <p>
+            <label>Name<input type="text" name="name" required /></label>   
+          </p>
+          <p>
+            <label>Email<input type="email" name="email" required /></label>
+          </p>
+          <p>
+          <label class="container">One
+          <input type="radio" checked="checked" name="radio"></input>
+          <span class="checkmark"></span>
+          </label>
+            <input type="text" name="text" list="countries" />
+            <datalist id="countries">
+              <option value="England"></option>
+              <option value="Mongolia"></option>    
+              <option value="Italy"></option>
+              <option value="Singapore"></option>
+              <option value="Finland"></option>
+            </datalist>           
+          </p>
+          <p>
+            <label>Capital City<input type="text" name="city" required /></label>
+
+          </p>
+          <p>
+            <label>Population<input type="text" name="population" required /></label>
+          </p>
+          <p>
+            <label>National Language<input type="text" name="National Language" required /></label>
+          </p>
+          <p>
+          <label>Currency<input type="text" name="Currency" required /></label>
+          </p>
+          <p>
+            <label>Culture and interesting facts<textarea name="Information" required ></textarea></label>
+          </p>
+          <p className="text-align-right">
+            <button className="button" type="submit">Submit response <span className="icon -right"><RiSendPlane2Line/></span></button>
+          </p>
+        </form>
+      </div>
      
     </Layout>
   )
