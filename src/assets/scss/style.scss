@@ -336,23 +336,19 @@ article img {
 		background-color: rgb(179, 177, 177);
 		border-radius: 50%;
 	}
-	.checkmark:after {
-		content: "";
-		position: absolute;
-		display: none;
-	}
+	// .checkmark:after {
+	// 	content: "";
+	// 	position: absolute;
+	// 	display: none;
+	// }
 	.container {
 		display: block;
 		position: relative;
-		font-size: 18px;//Set the font size same as label size
 		padding-right: 30px;
 		padding-left: 30px;
 		margin-top: 13px;
+		font-size: 18px;//Set the font size same as label size
 		cursor: pointer;
-		// -webkit-user-select: none;
-		// -moz-user-select: none;
-		// -ms-user-select: none;
-		// user-select: none;
 		input {
 			position: absolute;
 			cursor: pointer;
@@ -361,9 +357,9 @@ article img {
 		input:checked ~ .checkmark {
 			background-color: #3d295c;
 		}
-		input:checked ~ .checkmark:after {
-			display: block;
-		}
+		// input:checked ~ .checkmark:after {
+		// 	display: block;
+		// }
 	}	
 	
 	input,
