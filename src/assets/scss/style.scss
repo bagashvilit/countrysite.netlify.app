@@ -330,20 +330,21 @@ article img {
 	.container {
 		display: block;
 		position: relative;
-		padding-left: 35px;
-		margin-top: 12px;
+		font-size: 18px;//Set the font size same as label size
+		padding-right: 30px;
+		padding-left: 30px;
+		margin-top: 13px;
 		cursor: pointer;
-		font-size: 18px;
 		-webkit-user-select: none;
 		-moz-user-select: none;
 		-ms-user-select: none;
 		user-select: none;
-	}
-	.container input {
-		position: absolute;
-		cursor: pointer;
-	}
-	
+		input {
+			position: absolute;
+			cursor: pointer;
+			opacity:0; 	// Set opacity to zero to hide the input box behind the element
+		}
+	}	
 	.checkmark {
 		position: absolute;
 		top: 0;
