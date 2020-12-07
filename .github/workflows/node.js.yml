@@ -24,8 +24,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Run markdown linting
-        uses: actionshub/markdownlint@master
+    - name: Check out code
+      uses: actions/checkout@main
+    - name: Run mdl
+      uses: actionshub/markdownlint@main
     - name: Install dependencies
       run: npm install
     - name: Build site
