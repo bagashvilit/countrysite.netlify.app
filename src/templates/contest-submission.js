@@ -103,6 +103,27 @@ const contest = ({data}) => {
           </p>
 
           <p>
+          <label> Capital of the selected country </label>
+            <label class="container">Berlin
+            <input type="radio" name="capital"/>
+            <span class="checkmark"></span>
+            </label>
+            <label class="container">Bangkok
+            <input type="radio" name="capital"/>
+            <span class="checkmark"></span>
+            </label>
+            <label class="container">Brussels
+            <input type="radio" name="capital"/>
+            <span class="checkmark"></span>
+            </label>
+            <label class="container">Ulaanbataar
+            <input type="radio" name="capital"/>
+            <span class="checkmark"></span>
+            </label> 
+
+          </p>
+
+          <p>
             <label>Culture and interesting facts<textarea name="Information" required ></textarea></label>
           </p>
           <p className="text-align-right">
