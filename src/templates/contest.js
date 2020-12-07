@@ -1,105 +1,52 @@
-var myQuestions = [
-	{
-		question: "What is 10/2?",
-		answers: {
-			a: '3',
-			b: '5',
-			c: '115'
-		},
-		correctAnswer: 'b'
-	},
-	{
-		question: "What is 30/3?",
-		answers: {
-			a: '3',
-			b: '5',
-			c: '10'
-		},
-		correctAnswer: 'c'
-	}
-];
-
-function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
-
-	function showQuestions(questions, quizContainer){
-			// we'll need a place to store the output and the answer choices
-	var output = [];
-	var answers;
-
-	// for each question...
-	for(var i=0; i<questions.length; i++){
-		
-		// first reset the list of answers
-		answers = [];
-
-		// for each available answer to this question...
-		for(letter in questions[i].answers){
-
-			// ...add an html radio button
-			answers.push(
-				'<label>'
-					+ '<input type="radio" name="question'+i+'" value="'+letter+'">'
-					+ letter + ': '
-					+ questions[i].answers[letter]
-				+ '</label>'
-			);
-		}
-
-		// add this question and its answers to the output
-		output.push(
-			'<div class="question">' + questions[i].question + '</div>'
-			+ '<div class="answers">' + answers.join('') + '</div>'
-		);
-	}
-
-	// finally combine our output list into one string of html and put it on the page
-	quizContainer.innerHTML = output.join('');
-	}
-
-	function showResults(questions, quizContainer, resultsContainer){
-			// gather answer containers from our quiz
-	var answerContainers = quizContainer.querySelectorAll('.answers');
-	
-	// keep track of user's answers
-	var userAnswer = '';
-	var numCorrect = 0;
-	
-	// for each question...
-	for(var i=0; i<questions.length; i++){
-
-		// find selected answer
-		userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
-		
-		// if answer is correct
-		if(userAnswer===questions[i].correctAnswer){
-			// add to the number of correct answers
-			numCorrect++;
-			
-			// color the answers green
-			answerContainers[i].style.color = 'lightgreen';
-		}
-		// if answer is wrong or blank
-		else{
-			// color the answers red
-			answerContainers[i].style.color = 'red';
-		}
-	}
-
-	// show number of correct answers out of total
-	resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
-	}
-
-	// show the questions
-	showQuestions(questions, quizContainer);
-
-	// when user clicks submit, show results
-	submitButton.onclick = function(){
-		showResults(questions, quizContainer, resultsContainer);
-	}
+function Country(name, iso, capital, population) {
+  "use strict";
+  //  Add the missing source code in the Country constructor
+  this.name = name;
+  this.iso = iso;
+  this.capital = capital;
+  this.population = population;
 }
+(function() {
+  "use strict";
+  //  create an array of sample country objects
+  var countries = [
+    new Country("Bahamas", "BS", "Nassau", 301790),
+    new Country("Canada", "CA", "Ottawa", 33679000),
+    new Country("Germany", "DE", "Berlin", 81802257)
 
-var quizContainer = document.getElementById('quiz');
-var resultsContainer = document.getElementById('results');
-var submitButton = document.getElementById('submit');
 
-generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+  ];
+  //  you can also push each new country object onto the end of the array
+  countries.push(new Country("Spain", "ES", "Madrid", 46505963));
+  countries.push(new Country("United Kingdom", "GB", "London", 62348447));
+  // Countries I added
+  countries.push(new Country("Georgia", "GE", "Tbilisi", 3989167));
+  countries.push(new Country("Japan", "JP", "Tokyo", 126476461));
+  countries.push(new Country("Thailand", "TH", "Bangkok", 69866092));
+  countries.push(new Country("Philippines", "PH", "Manila",  109581078));
+  countries.push(new Country("Vietnam", "VN", "Hanoi", 97141003));
+
+  // now loop through all this array of country objects
+  
+  // note that many web developers do not consider it a best practice
+  // to modify the DOM through the document.write method. Please talk
+  // with the course instructor to learn more about this idea.
+  for (var i = 0; i < countries.length; i++) {
+    var c = countries[i];
+    // Add in the source code to start the div marker
+    document.write("<div class= 'box'>");
+    // Convert ISO codes into lowercase because the GatorGrader looks for flag images with lower case names
+    document.write("<img src='img/flags/" + c.iso.toLowerCase() + ".png' class='boxImg'>");
+    document.write("<p>");
+    // now loop through all of the details about the country
+    for (var propertyName in c) {
+      document.write("<strong>");
+      document.write(propertyName + ": ");
+      document.write("</strong>");
+      document.write(c[propertyName]);
+      document.write("<br>");
+    }
+    // Add in the source code to conclude the div marker
+    document.write("</div>")
+  }
+})();
