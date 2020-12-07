@@ -1,3 +1,5 @@
+
+      
 import React from "react"
 import { graphql } from "gatsby"
 import {RiSendPlane2Line} from "react-icons/ri";
@@ -38,37 +40,89 @@ const contest = ({data}) => {
         <h1>{frontmatter.title}</h1>
         <div className="description" dangerouslySetInnerHTML={{ __html: html }} />
         <form className="contact-form" action="/thanks" name="contest" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="form-name" value="contest" />
           <p>
             <label>Name<input type="text" name="name" required /></label>   
           </p>
           <p>
             <label>Email<input type="email" name="email" required /></label>
-          </p>
+          </p>           
           <p>
-            <label>Pick the country</label>
-            <input type="text" name="text" list="countries" />
-            <datalist id="countries">
-              <option value="England"></option>
-              <option value="Mongolia"></option>    
-              <option value="Italy"></option>
-              <option value="Singapore"></option>
-              <option value="Finland"></option>
-            </datalist>           
-          </p>
-          <p>
-            <label>Capital City<input type="text" name="city" required /></label>
+          <label> Please select the country </label>
+            <label class="checkbox">Mongolia
+            <input type="radio" name="country"/>
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">Germany
+            <input type="radio" name="country"/>
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">Belgium
+            <input type="radio" name="country"/>
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">Thailand
+            <input type="radio" name="country"/>
+            <span class="checkmark"></span>
+            </label> 
 
           </p>
           <p>
-            <label>Population<input type="text" name="population" required /></label>
+          <label> Population of the selected country </label>
+            <label class="checkbox">3.17 million
+            <input type="radio" name="population"/>
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">11.46 million
+            <input type="radio" name="population"/>
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">69.43 million
+            <input type="radio" name="population"/>
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">83.02 million
+            <input type="radio" name="population"/>
+            <span class="checkmark"></span>
+            </label> 
           </p>
           <p>
-            <label>National Language<input type="text" name="National Language" required /></label>
+          <label> Currency of the selected country </label>
+            <label class="checkbox">Euro
+            <input type="radio" name="radio"/>
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">Tugric
+            <input type="radio" name="radio"/>
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">Baht
+            <input type="radio" name="radio"/>
+            <span class="checkmark"></span>
+            </label>
           </p>
+
           <p>
-          <label>Currency<input type="text" name="Currency" required /></label>
+          <label> Capital of the selected country </label>
+            <label class="checkbox">Berlin
+            <input type="radio" name="capital"/>
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">Bangkok
+            <input type="radio" name="capital"/>
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">Brussels
+            <input type="radio" name="capital"/>
+            <span class="checkmark"></span>
+            </label>
+            <label class="checkbox">Ulaanbataar
+            <input type="radio" name="capital"/>
+            <span class="checkmark"></span>
+            </label> 
+
           </p>
+
           <p>
             <label>Culture and interesting facts<textarea name="Information" required ></textarea></label>
           </p>
@@ -83,3 +137,4 @@ const contest = ({data}) => {
 }
 
 export default contest
+     

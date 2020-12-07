@@ -15,7 +15,7 @@ const Thanks = () => (
         fontSize: "128px",
         color: "var(--primary-color)"
       }}/>
-      <h1>Got your message</h1>
+      <h1>Got your submission</h1>
       <p>We will get back to you shortly.</p>
       <Link to="/" className="button"><RiArrowLeftSLine className="icon -left"/>Lets go back to Homepage</Link>
     </div>
