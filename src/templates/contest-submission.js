@@ -49,7 +49,7 @@ const contest = ({data}) => {
           </p>
           <p>
           <label class="container">One
-          <input type="radio" checked="checked" name="radio"></input>
+          <input type="radio" name="radio"></input>
           <span class="checkmark"></span>
           </label>
           <label class="container">two
