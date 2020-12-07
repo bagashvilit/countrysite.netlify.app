@@ -55,6 +55,7 @@ const contest = ({data}) => {
         and <a href="https://csethics.allegheny.edu/">Allegheny Mozilla Fellow</a>.
       </p>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
     <script type="text/javascript" language = "javascript" src="contest.js"></script>
      
 
