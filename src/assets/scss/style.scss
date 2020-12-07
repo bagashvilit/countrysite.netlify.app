@@ -328,19 +328,14 @@ article img {
 		font-weight: 600;
 	}
 	.checkmark {
-		position: absolute;
+		position: relative;
 		top: 0;
-		left: 0;
+		left: 30px;
 		height: 15px;
 		width: 15px;
 		background-color: rgb(179, 177, 177);
 		border-radius: 50%;
 	}
-	// .checkmark:after {
-	// 	content: "";
-	// 	position: absolute;
-	// 	display: none;
-	// }
 	.container {
 		display: block;
 		position: relative;
@@ -357,9 +352,6 @@ article img {
 		input:checked ~ .checkmark {
 			background-color: #3d295c;
 		}
-		// input:checked ~ .checkmark:after {
-		// 	display: block;
-		// }
 	}	
 	
 	input,
