@@ -328,9 +328,9 @@ article img {
 		font-weight: 600;
 	}
 	.checkmark {
-		position: relative;
+		position: absolute;
 		top: 0;
-		left: 30px;
+		left: 0;
 		height: 15px;
 		width: 15px;
 		background-color: rgb(179, 177, 177);
@@ -343,12 +343,15 @@ article img {
 		padding-left: 30px;
 		margin-top: 13px;
 		font-size: 18px;//Set the font size same as label size
+
 		cursor: pointer;
+
 		input {
 			position: absolute;
 			cursor: pointer;
 			opacity:0; 	// Set opacity to zero to hide the input box behind the element
 		}
+		
 		input:checked ~ .checkmark {
 			background-color: #3d295c;
 		}
