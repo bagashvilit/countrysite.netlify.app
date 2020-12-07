@@ -48,22 +48,7 @@ const contest = ({data}) => {
             <label>Email<input type="email" name="email" required /></label>
           </p>
           <p>
-            <label> Please select the country </label>
-              <input type="radio" name="country" id="Germany"/>
-              <label for="Germany" class="container">Germany</label>
-              <span class="checkmark"></span>
-              
-              <input type="radio" name="country" id="Mongolia"/>
-              <label for="Mongolia" class="container">Mongolia</label>
-              <span class="checkmark"></span>
 
-              <input type="radio" name="country" id="Thailand"/>
-              <label for="Thailand" class="container">Thailand</label>
-              <span class="checkmark"></span>
-
-              <input type="radio" name="country" id="Thailand"/>
-              <label for="Thailand" class="container">Thailand</label>
-              <span class="checkmark"></span>
             </p>               
           <p>
           <label> Capital of the selected country </label>
