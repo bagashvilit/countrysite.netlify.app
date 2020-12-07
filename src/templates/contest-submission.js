@@ -48,23 +48,6 @@ const contest = ({data}) => {
             <label>Email<input type="email" name="email" required /></label>
           </p>
           <p>
-            <label> Please select the country </label>
-              <label class="container">Germany
-              <input type="radio" name="capital"/>
-              <span class="checkmark"></span>
-              </label>
-              <label class="container">Mongolia
-              <input type="radio" name="capital"/>
-              <span class="checkmark"></span>
-              </label>
-              <label class="container">Thailand
-              <input type="radio" name="capital"/>
-              <span class="checkmark"></span>
-              </label>
-              <label class="container">Belgium
-              <input type="radio" name="capital"/>
-              <span class="checkmark"></span>
-              </label> 
             </p>               
           <p>
           <label> Capital of the selected country </label>
@@ -120,6 +103,25 @@ const contest = ({data}) => {
             <span class="checkmark"></span>
             </label>
           </p>
+          <p>
+          <label> Please select the country </label>
+              <label class="container">Germany
+              <input type="radio" name="capital"/>
+              <span class="checkmark"></span>
+              </label>
+              <label class="container">Mongolia
+              <input type="radio" name="capital"/>
+              <span class="checkmark"></span>
+              </label>
+              <label class="container">Thailand
+              <input type="radio" name="capital"/>
+              <span class="checkmark"></span>
+              </label>
+              <label class="container">Belgium
+              <input type="radio" name="capital"/>
+              <span class="checkmark"></span>
+              </label>
+              </p>
           <p>
             <label>Culture and interesting facts<textarea name="Information" required ></textarea></label>
           </p>
