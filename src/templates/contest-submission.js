@@ -49,19 +49,19 @@ const contest = ({data}) => {
           </p>           
           <p>
           <label> Please select the country </label>
-            <label class="container">Mongolia
+            <label class="checkbox">Mongolia
             <input type="radio" name="country"/>
             <span class="checkmark"></span>
             </label>
-            <label class="container">Germany
+            <label class="checkbox">Germany
             <input type="radio" name="country"/>
             <span class="checkmark"></span>
             </label>
-            <label class="container">Belgium
+            <label class="checkbox">Belgium
             <input type="radio" name="country"/>
             <span class="checkmark"></span>
             </label>
-            <label class="container">Thailand
+            <label class="checkbox">Thailand
             <input type="radio" name="country"/>
             <span class="checkmark"></span>
             </label> 
@@ -69,34 +69,34 @@ const contest = ({data}) => {
           </p>
           <p>
           <label> Population of the selected country </label>
-            <label class="container">3.17 million
+            <label class="checkbox">3.17 million
             <input type="radio" name="population"/>
             <span class="checkmark"></span>
             </label>
-            <label class="container">11.46 million
+            <label class="checkbox">11.46 million
             <input type="radio" name="population"/>
             <span class="checkmark"></span>
             </label>
-            <label class="container">69.43 million
+            <label class="checkbox">69.43 million
             <input type="radio" name="population"/>
             <span class="checkmark"></span>
             </label>
-            <label class="container">83.02 million
+            <label class="checkbox">83.02 million
             <input type="radio" name="population"/>
             <span class="checkmark"></span>
             </label> 
           </p>
           <p>
           <label> Currency of the selected country </label>
-            <label class="container">Euro
+            <label class="checkbox">Euro
             <input type="radio" name="radio"/>
             <span class="checkmark"></span>
             </label>
-            <label class="container">Tugric
+            <label class="checkbox">Tugric
             <input type="radio" name="radio"/>
             <span class="checkmark"></span>
             </label>
-            <label class="container">Baht
+            <label class="checkbox">Baht
             <input type="radio" name="radio"/>
             <span class="checkmark"></span>
             </label>
@@ -104,19 +104,19 @@ const contest = ({data}) => {
 
           <p>
           <label> Capital of the selected country </label>
-            <label class="container">Berlin
+            <label class="checkbox">Berlin
             <input type="radio" name="capital"/>
             <span class="checkmark"></span>
             </label>
-            <label class="container">Bangkok
+            <label class="checkbox">Bangkok
             <input type="radio" name="capital"/>
             <span class="checkmark"></span>
             </label>
-            <label class="container">Brussels
+            <label class="checkbox">Brussels
             <input type="radio" name="capital"/>
             <span class="checkmark"></span>
             </label>
-            <label class="container">Ulaanbataar
+            <label class="checkbox">Ulaanbataar
             <input type="radio" name="capital"/>
             <span class="checkmark"></span>
             </label> 
