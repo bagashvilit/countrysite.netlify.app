@@ -307,15 +307,15 @@ article img {
 		margin: 0 auto;
 	}
 }
-// Forms(Contact and contest)
+// Contact page
 .contact-page {
 	.wrapper {
 		max-width: 768px;
 		margin: 0 auto;
 		padding: 2rem;
 		padding-bottom: 1rem;
-		background-color: #dfd8e7;
-		box-shadow: 0 10px 20px rgba(39, 29, 49, 0.19);
+		background-color: #fefefe;
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
 	}
 	.description {
 		line-height: 1.5;
@@ -365,7 +365,25 @@ article img {
 			display: block;
 		}
 	}	
-
+	
+	input,
+	textarea {
+		width: 100%;
+		max-width: 100%;
+		margin: 8px 0 16px;
+		padding: 16px;
+		border: 6px solid #8f7caa;
+		border-radius: 12px;
+		appearance: none;
+		font-size: 18px;
+		font-weight: 600;
+		&:focus {
+			border-color: var(--input-focus-border);
+		}
+	}
+	textarea {
+		min-height: 200px;
+	}
 }
 body {
   background: linear-gradient(to top, #ae9bc8, #e0d4f0);
