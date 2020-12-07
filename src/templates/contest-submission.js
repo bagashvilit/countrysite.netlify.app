@@ -47,20 +47,19 @@ const contest = ({data}) => {
           <p>
             <label>Email<input type="email" name="email" required /></label>
           </p>
-          <p>
-          <label class="container">One
-          <input type="radio" name="radio"></input>
-          <span class="checkmark"></span>
-          </label>
-          <label class="container">two
-          <input type="radio" name="radio"></input>
-          <span class="checkmark"></span>
-          </label>
-          <label class="container">three
-          <input type="radio" name="radio"></input>
-          <span class="checkmark"></span>
-          </label>          
-          </p>
+          <p>Please select the country</p>
+            <label class="container">One
+            <input type="radio" name="radio"></input>
+            <span class="checkmark"></span>
+            </label>
+            <label class="container">two
+            <input type="radio" name="radio"></input>
+            <span class="checkmark"></span>
+            </label>
+            <label class="container">three
+            <input type="radio" name="radio"></input>
+            <span class="checkmark"></span>
+            </label>                   
           <p>
             <label>Capital City<input type="text" name="city" required /></label>
 
