@@ -307,15 +307,15 @@ article img {
 		margin: 0 auto;
 	}
 }
-// Contact page
+// Forms(Contact and contest)
 .contact-page {
 	.wrapper {
 		max-width: 768px;
 		margin: 0 auto;
 		padding: 2rem;
 		padding-bottom: 1rem;
-		background-color: #fefefe;
-		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+		background-color: #dfd8e7;
+		box-shadow: 0 10px 20px rgba(39, 29, 49, 0.19);
 	}
 	.description {
 		line-height: 1.5;
@@ -335,6 +335,11 @@ article img {
 		width: 15px;
 		background-color: rgb(179, 177, 177);
 		border-radius: 50%;
+	}
+	.checkmark:after {
+		content: "";
+		position: absolute;
+		display: none;
 	}
 	.container {
 		display: block;
@@ -356,36 +361,11 @@ article img {
 		input:checked ~ .checkmark {
 			background-color: #3d295c;
 		}
-	}	
-	
-	.checkmark:after {
-		content: "";
-		position: absolute;
-		display: none;
-	}
-	
-	.container input:checked ~ .checkmark:after {
-		display: block;
-	}
-	
-	input,
-	textarea {
-		width: 100%;
-		max-width: 100%;
-		margin: 8px 0 16px;
-		padding: 16px;
-		border: 6px solid #8f7caa;
-		border-radius: 12px;
-		appearance: none;
-		font-size: 18px;
-		font-weight: 600;
-		&:focus {
-			border-color: var(--input-focus-border);
+		input:checked ~ .checkmark:after {
+			display: block;
 		}
-	}
-	textarea {
-		min-height: 200px;
-	}
+	}	
+
 }
 body {
   background: linear-gradient(to top, #ae9bc8, #e0d4f0);
