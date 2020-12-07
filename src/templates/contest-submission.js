@@ -48,20 +48,20 @@ const contest = ({data}) => {
             <label>Email<input type="email" name="email" required /></label>
           </p>           
           <p>
-          <label> Capital of the selected country </label>
-            <label class="container">Ulaanbaatar
+          <label> Please select the country </label>
+            <label class="container">Mongolia
             <input type="radio" name="capital"/>
             <span class="checkmark"></span>
             </label>
-            <label class="container">Berlin
+            <label class="container">Germany
             <input type="radio" name="capital"/>
             <span class="checkmark"></span>
             </label>
-            <label class="container">Brussels
+            <label class="container">Belgium
             <input type="radio" name="capital"/>
             <span class="checkmark"></span>
             </label>
-            <label class="container">Bangkok
+            <label class="container">Thailand
             <input type="radio" name="capital"/>
             <span class="checkmark"></span>
             </label> 
