@@ -52,14 +52,14 @@ const contest = ({data}) => {
           <input type="radio" checked="checked" name="radio"></input>
           <span class="checkmark"></span>
           </label>
-            <input type="text" name="text" list="countries" />
-            <datalist id="countries">
-              <option value="England"></option>
-              <option value="Mongolia"></option>    
-              <option value="Italy"></option>
-              <option value="Singapore"></option>
-              <option value="Finland"></option>
-            </datalist>           
+          <label class="container">two
+          <input type="radio" name="radio"></input>
+          <span class="checkmark"></span>
+          </label>
+          <label class="container">three
+          <input type="radio" name="radio"></input>
+          <span class="checkmark"></span>
+          </label>          
           </p>
           <p>
             <label>Capital City<input type="text" name="city" required /></label>
