@@ -49,19 +49,19 @@ const contest = ({data}) => {
           </p>
           <p>
             <label> Please select the country </label>
-              <input type="checkbox" name="country" id="Germany"/>
+              <input type="radio" name="country" id="Germany"/>
               <label for="Germany" class="container">Germany</label>
               <span class="checkmark"></span>
               
-              <input type="checkbox" name="country" id="Mongolia"/>
+              <input type="radio" name="country" id="Mongolia"/>
               <label for="Mongolia" class="container">Mongolia</label>
               <span class="checkmark"></span>
 
-              <input type="checkbox" name="country" id="Thailand"/>
+              <input type="radio" name="country" id="Thailand"/>
               <label for="Thailand" class="container">Thailand</label>
               <span class="checkmark"></span>
 
-              <input type="checkbox" name="country" id="Thailand"/>
+              <input type="radio" name="country" id="Thailand"/>
               <label for="Thailand" class="container">Thailand</label>
               <span class="checkmark"></span>
             </p>               
