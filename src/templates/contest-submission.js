@@ -57,27 +57,68 @@ const contest = ({data}) => {
             <input type="radio" name="radio"></input>
             <span class="checkmark"></span>
             </label>
-            <label class="container">Singapore
+            <label class="container">Thailand
             <input type="radio" name="radio"></input>
             <span class="checkmark"></span>
             </label>
-            <label class="container">England
+            <label class="container">Belgium
             <input type="radio" name="radio"></input>
             <span class="checkmark"></span>
             </label> 
             </p>               
           <p>
-            <label>Capital City<input type="text" name="city" required /></label>
+          <label> Capital of the selected country </label>
+            <label class="container">Ulaanbaatar
+            <input type="radio" name="radio"></input>
+            <span class="checkmark"></span>
+            </label>
+            <label class="container">Berlin
+            <input type="radio" name="radio"></input>
+            <span class="checkmark"></span>
+            </label>
+            <label class="container">Brussels
+            <input type="radio" name="radio"></input>
+            <span class="checkmark"></span>
+            </label>
+            <label class="container">Bangkok
+            <input type="radio" name="radio"></input>
+            <span class="checkmark"></span>
+            </label> 
 
           </p>
           <p>
-            <label>Population<input type="text" name="population" required /></label>
+          <label> Population of the selected country </label>
+            <label class="container">3.17 million
+            <input type="radio" name="radio"></input>
+            <span class="checkmark"></span>
+            </label>
+            <label class="container">11.46 million
+            <input type="radio" name="radio"></input>
+            <span class="checkmark"></span>
+            </label>
+            <label class="container">69.43 million
+            <input type="radio" name="radio"></input>
+            <span class="checkmark"></span>
+            </label>
+            <label class="container">83.02 million
+            <input type="radio" name="radio"></input>
+            <span class="checkmark"></span>
+            </label> 
           </p>
           <p>
-            <label>National Language<input type="text" name="National Language" required /></label>
-          </p>
-          <p>
-          <label>Currency<input type="text" name="Currency" required /></label>
+          <label> Currency of the selected country </label>
+            <label class="container">Euro
+            <input type="radio" name="radio"></input>
+            <span class="checkmark"></span>
+            </label>
+            <label class="container">Mongolia
+            <input type="radio" name="radio"></input>
+            <span class="checkmark"></span>
+            </label>
+            <label class="container">Singapore
+            <input type="radio" name="radio"></input>
+            <span class="checkmark"></span>
+            </label>
           </p>
           <p>
             <label>Culture and interesting facts<textarea name="Information" required ></textarea></label>
