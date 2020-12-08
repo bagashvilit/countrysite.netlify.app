@@ -299,7 +299,7 @@ article img {
 // Page
 .page,
 .blog-page,
-.contact-page,
+.form-page,
 .thanks-page,
 .not-found-page {
 	padding: 50px 20px;
@@ -309,7 +309,7 @@ article img {
 	}
 }
 // Contact page
-.contact-page {
+.form-page {
 	.wrapper {
 		max-width: 768px;
 		margin: 0 auto;
@@ -322,7 +322,7 @@ article img {
 		line-height: 1.5;
 	}
 }
-.contact-form {
+.form {
 	margin-top: 36px;
 	label {
 		font-size: 18px;
