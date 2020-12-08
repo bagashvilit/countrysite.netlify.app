@@ -48,4 +48,4 @@ To lint the source code the project uses Prettier code formater. The command is 
 # Source
 
 This project was deployed from the [Foundation - Gatsby and NetlifyCMS Starter](https://templates.netlify.com/template/foundation-gatsby-netlifycms-starter/)
-template. Therefore the portion of the source code is either part of or inspired from that template.
+template. Therefore the portion of the source code is either part of or inspired from that template
