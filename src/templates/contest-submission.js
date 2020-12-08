@@ -30,7 +30,7 @@ const contest = ({data}) => {
   const { frontmatter, html } = markdownRemark
 
   return  (
-    <Layout className="contact-page">
+    <Layout className="form-page">
       <SEO 
         title={frontmatter.title}
         description={frontmatter.title + " " + site.siteMetadata.title}
@@ -39,7 +39,7 @@ const contest = ({data}) => {
       <div className="wrapper">
         <h1>{frontmatter.title}</h1>
         <div className="description" dangerouslySetInnerHTML={{ __html: html }} />
-        <form className="contact-form" action="/thanks" name="contest" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form className="form" action="/thanks" name="contest" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contest" />
           <p>
             <label>Name<input type="text" name="name" required /></label>   
