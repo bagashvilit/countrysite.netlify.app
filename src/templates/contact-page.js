@@ -4,7 +4,7 @@ import {RiSendPlane2Line} from "react-icons/ri";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
+// Query GraphQL
 export const pageQuery = graphql`
   query ContactQuery($id: String!){
 		markdownRemark(id: { eq: $id }) {

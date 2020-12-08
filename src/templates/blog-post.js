@@ -79,7 +79,7 @@ const Post = ({ data, pageContext }) => {
 }
 
 export default Post
-
+// Query GraphQL
 export const pageQuery = graphql`
   query BlogPostQuery($id: String!) {
     markdownRemark( 
