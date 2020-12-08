@@ -22,7 +22,7 @@ export const pageQuery = graphql`
     }
   }
 `
-
+// Create and style the contact form sumbission, the form sumbission will appear on the Netlify dashboard under name contact.
 const Contact = ({data}) => {
   const { markdownRemark, site } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark

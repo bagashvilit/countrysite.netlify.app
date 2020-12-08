@@ -5,6 +5,7 @@ import {RiArrowLeftSLine, RiCheckboxCircleLine} from "react-icons/ri"
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 
+// Define and style the thank you page that will appear after the user makes a form sumbission
 const Thanks = () => (
   <Layout className="thanks-page">
     <SEO title="Thank you"/>

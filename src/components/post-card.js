@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 
+// Define and style the postcards of the bog-posts that appear on the home page and blog pages
 const PostCard = ({ data }) => (
   <article className="post-card">
     {data.frontmatter.featuredImage ? 

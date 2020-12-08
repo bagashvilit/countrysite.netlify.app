@@ -1,13 +1,14 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/63521b78-612e-4a2f-a409-3fa8009e7f3b/deploy-status)](https://app.netlify.com/sites/countrysite/deploys?filter=main)
 
+![website screenshot](static/assets/screenshot_two.png)
+
 * [Introduction](#introduction)
 * [Installation](#installation)
 * [Building](#building)
 * [Testing](#testing)
+* [Source](#source)
 
 # Introduction
-
-![website screenshot](static/assets/screenshot_two.png)
 
 This repository holds source code for [CountrySite](https://countrysite.netlify.app/) website. CountrySite is for spreading knowledge and cultural awareness by blog posts and engaging users by fun activities such as monthly contests. For more information
 please visit the website.
@@ -38,8 +39,13 @@ You may also run:
 
 And the website should be runnign on `http://localhost:8000`, and the changes in the source code should be reflected in real time.
 
-# testing
+# Testing
 
 To lint the source code the project uses Prettier code formater. The command is also defined in `package.json` and may be used as follows:
 
 `npm run format`
+
+# Source
+
+This project was deployed from the [Foundation - Gatsby and NetlifyCMS Starter](https://templates.netlify.com/template/foundation-gatsby-netlifycms-starter/)
+template. Therefore the portion of the source code is either part of or inspired from that template.

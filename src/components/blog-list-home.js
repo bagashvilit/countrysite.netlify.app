@@ -4,6 +4,7 @@ import { RiArrowDownLine, RiArrowRightSLine } from "react-icons/ri"
 
 import PostCard from "./post-card"
 
+// Display the button on home page to navigate to the About page
 const PostMaker = ({ data }) => (
   <section className="home-posts">
     <h2>Latest in <strong>Blog</strong> <span class="icon -right"><RiArrowDownLine/></span></h2>
@@ -14,6 +15,7 @@ const PostMaker = ({ data }) => (
   </section>
 )
 
+// List recently updated blogs, send queries to graphql
 export default function BlogListHome() {
   return (
     <StaticQuery 
