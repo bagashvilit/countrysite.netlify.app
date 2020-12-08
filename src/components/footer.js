@@ -2,6 +2,7 @@ import React from "react"
 import {Link} from "gatsby"
 import { RiHeart2Line } from "react-icons/ri";
 
+// Define the footer of the website, and style it with site-footer and container classes
 const Footer = () => (
   <footer className="site-footer">
     <div className="container">

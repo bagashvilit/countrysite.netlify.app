@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import BlogListHome from "../components/blog-list-home"
 import SEO from "../components/seo"
 
+// Query GraphQL
 export const pageQuery = graphql`
   query HomeQuery($id: String!){
 		markdownRemark(id: { eq: $id }) {
@@ -33,7 +34,7 @@ export const pageQuery = graphql`
     }
   }
 `
-
+// Extract metadata
 const HomePage = ({ data }) => {
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark

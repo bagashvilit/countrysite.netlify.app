@@ -4,7 +4,7 @@ import {RiSendPlane2Line} from "react-icons/ri";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
+// Query GraphQL
 export const pageQuery = graphql`
   query ContactQuery($id: String!){
 		markdownRemark(id: { eq: $id }) {
@@ -22,7 +22,7 @@ export const pageQuery = graphql`
     }
   }
 `
-
+// Create and style the contact form sumbission, the form sumbission will appear on the Netlify dashboard under name contact.
 const Contact = ({data}) => {
   const { markdownRemark, site } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark

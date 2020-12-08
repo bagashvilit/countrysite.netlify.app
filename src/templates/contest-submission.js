@@ -24,7 +24,7 @@ export const pageQuery = graphql`
     }
   }
 `
-
+// Create and style the form for contests, that will include multiple choice questions that use radio buttons for checks, the form submission will appear on the Netlify site dashboard.
 const contest = ({data}) => {
   const { markdownRemark, site } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark

@@ -6,6 +6,7 @@ import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 import Layout from "../components/layout"
 import SEO from '../components/seo';
 
+// Create and style the pagination and add button to navigate to the previous and following blog posts
 const Pagination = (props) => (
   <div className="pagination -post">
     <ul>
@@ -78,7 +79,7 @@ const Post = ({ data, pageContext }) => {
 }
 
 export default Post
-
+// Query GraphQL
 export const pageQuery = graphql`
   query BlogPostQuery($id: String!) {
     markdownRemark( 

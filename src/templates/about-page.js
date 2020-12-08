@@ -16,8 +16,9 @@ export const pageQuery = graphql`
     }
   }
 `
+// Extract the metadata of page
 const AboutPage = ({ data }) => {
-	const { markdownRemark } = data // data.markdownRemark holds your post data
+	const { markdownRemark } = data // data.markdownRemark holds the post data
   const { frontmatter, html, excerpt } = markdownRemark
 
 	return (

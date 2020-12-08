@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 
+// Add pages names to the navigation bar
 const MenuItems = [
   {
     path: "/",

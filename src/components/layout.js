@@ -17,7 +17,7 @@ query LayoutQuery {
   }
 }
 `
-
+// Define the layout of the page and style it with primary-container class
 const Layout = ({children, className}) => {
 
   const { site } = useStaticQuery(query)
